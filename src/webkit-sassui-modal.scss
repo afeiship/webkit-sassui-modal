@@ -2,14 +2,18 @@
 $webkit-sassui-modal-options:(
   z-index: 100,
   duration: 250ms,
-  scale: 0.085
+  border-radius: 4px,
+  scale-init: 0.78,
+  scale-fat: 0.1
 )!default;
 
 .webkit-sassui-modal{
 
   $z-index: map-get($map: $webkit-sassui-modal-options, $key: z-index);
   $duration: map-get($map: $webkit-sassui-modal-options, $key: duration);
-  $scale: map-get($map: $webkit-sassui-modal-options, $key: scale);
+  $border-radius: map-get($map: $webkit-sassui-modal-options, $key: border-radius);
+  $scale-init: map-get($map: $webkit-sassui-modal-options, $key: scale-init);
+  $scale-fat: map-get($map: $webkit-sassui-modal-options, $key: scale-fat);
 
   width: 80%;
   top:42.5%;
@@ -17,18 +21,18 @@ $webkit-sassui-modal-options:(
   position: fixed;
   z-index: $z-index;
   user-select:none;
-  border-radius: 10px;
+  border-radius: $border-radius;
   transform-origin: 0 0;
   overflow: hidden;
 
   @keyframes webkit-sassui-modal-in {
     0% {
       opacity: 0;
-      transform: scale($scale) translate3d(-50%, -50%, 0);
+      transform: scale($scale-init) translate3d(-50%, -50%, 0);
     }
     85%{
-      opacity: 1;
-      transform: scale(1 + $scale) translate3d(-50%, -50%, 0);
+      opacity: $scale-init;
+      transform: scale(1 + $scale-fat) translate3d(-50%, -50%, 0);
     }
     100%{
       opacity: 1;
@@ -42,12 +46,12 @@ $webkit-sassui-modal-options:(
       transform: scale(1) translate3d(-50%, -50%, 0);
     }
     85%{
-      opacity: 0.1;
-      transform: scale(1-$scale) translate3d(-50%, -50%, 0);
+      opacity: $scale-init;
+      transform: scale(1+$scale-fat) translate3d(-50%, -50%, 0);
     }
     100%{
       opacity: 0;
-      transform: scale(0.9)translate3d(-50%, -50%, 0);
+      transform: scale($scale-init)translate3d(-50%, -50%, 0);
     }
   }
 

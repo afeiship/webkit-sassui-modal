@@ -6,17 +6,17 @@
   position: fixed;
   z-index: 100;
   user-select: none;
-  border-radius: 10px;
+  border-radius: 4px;
   transform-origin: 0 0;
   overflow: hidden; }
 
 @keyframes webkit-sassui-modal-in {
   0% {
     opacity: 0;
-    transform: scale(0.085) translate3d(-50%, -50%, 0); }
-  95% {
-    opacity: 1;
-    transform: scale(1.085) translate3d(-50%, -50%, 0); }
+    transform: scale(0.78) translate3d(-50%, -50%, 0); }
+  85% {
+    opacity: 0.78;
+    transform: scale(1.1) translate3d(-50%, -50%, 0); }
   100% {
     opacity: 1;
     transform: scale(1) translate3d(-50%, -50%, 0); } }
@@ -25,15 +25,15 @@
   0% {
     opacity: 1;
     transform: scale(1) translate3d(-50%, -50%, 0); }
-  95% {
-    opacity: 0.1;
-    transform: scale(0.915) translate3d(-50%, -50%, 0); }
+  85% {
+    opacity: 0.78;
+    transform: scale(1.1) translate3d(-50%, -50%, 0); }
   100% {
     opacity: 0;
-    transform: scale(0.9) translate3d(-50%, -50%, 0); } }
+    transform: scale(0.78) translate3d(-50%, -50%, 0); } }
   .webkit-sassui-modal.visible-true, .webkit-sassui-modal[data-visible=true] {
-    animation: 150ms webkit-sassui-modal-in ease-in-out forwards; }
+    animation: 250ms webkit-sassui-modal-in ease-in-out forwards; }
   .webkit-sassui-modal.visible-false, .webkit-sassui-modal[data-visible=false] {
-    animation: 150ms webkit-sassui-modal-out ease-in-out forwards; }
+    animation: 250ms webkit-sassui-modal-out ease-in-out forwards; }
 
 /*webkit-sassui-modal End*/
