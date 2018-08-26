@@ -1,7 +1,7 @@
 /*webkit-sassui-modal Start*/
 $webkit-sassui-modal-options:(
   z-index: 100,
-  duration: 850ms,
+  duration: 250ms,
   scale: 0.085
 )!default;
 
@@ -26,7 +26,7 @@ $webkit-sassui-modal-options:(
       opacity: 0;
       transform: scale($scale) translate3d(-50%, -50%, 0);
     }
-    95%{
+    85%{
       opacity: 1;
       transform: scale(1 + $scale) translate3d(-50%, -50%, 0);
     }
@@ -41,7 +41,7 @@ $webkit-sassui-modal-options:(
       opacity: 1;
       transform: scale(1) translate3d(-50%, -50%, 0);
     }
-    95%{
+    85%{
       opacity: 0.1;
       transform: scale(1-$scale) translate3d(-50%, -50%, 0);
     }
