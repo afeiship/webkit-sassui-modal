@@ -2,15 +2,17 @@
 $webkit-sassui-modal-options:(
   z-index: 100,
   duration: 150ms,
+  scale: 0.085
 )!default;
 
 .webkit-sassui-modal{
 
   $z-index: map-get($map: $webkit-sassui-modal-options, $key: z-index);
   $duration: map-get($map: $webkit-sassui-modal-options, $key: duration);
+  $scale: map-get($map: $webkit-sassui-modal-options, $key: scale);
 
   width: 80%;
-  top:38.2%;
+  top:42.5%;
   left:50%;
   position: fixed;
   z-index: $z-index;
@@ -22,11 +24,11 @@ $webkit-sassui-modal-options:(
   @keyframes webkit-sassui-modal-in {
     0% {
       opacity: 0;
-      transform: scale(0.1) translate3d(-50%, -50%, 0);
+      transform: scale($scale) translate3d(-50%, -50%, 0);
     }
     95%{
       opacity: 1;
-      transform: scale(1.085) translate3d(-50%, -50%, 0);
+      transform: scale(1 + $scale) translate3d(-50%, -50%, 0);
     }
     100%{
       opacity: 1;
@@ -41,7 +43,7 @@ $webkit-sassui-modal-options:(
     }
     95%{
       opacity: 0.1;
-      transform: scale(0.96) translate3d(-50%, -50%, 0);
+      transform: scale(1-$scale) translate3d(-50%, -50%, 0);
     }
     100%{
       opacity: 0;

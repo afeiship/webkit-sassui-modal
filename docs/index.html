@@ -12,16 +12,26 @@
 <body>
 
   <div id="el" class='webkit-sassui-modal test-webkit-sassui-modal' hidden data-visible="false">
-    <p>I am modal test!!!</p>
+    <div class="bd">
+      <h3>Modal title</h3>
+      <div>
+          <center><img src="http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg" alt=""></center>
+         <p>alert() 方法用于显示带有一条指定消息和一个 OK 按钮的警告框。</p>
+      </div>
+    </div>
     <button id="close">Close ME</button>
   </div>
 
-  <button id="btn">SHOW Model</button>
+  <footer class="actions">
+    <button id="btn">SHOW Model</button>
+    <button id="close2">Hide Model</button>
+  </footer>
 
   <script>
     var el = document.getElementById("el");
     var btn = document.getElementById("btn");
     var closeBtn = document.getElementById("close");
+    var close2 = document.getElementById("close2");
 
     el.addEventListener('webkitAnimationEnd', () => {
       if (el.getAttribute('data-visible') === 'false') {
@@ -34,7 +44,7 @@
       el.setAttribute('data-visible', true);
     };
 
-    closeBtn.onclick = function () {
+    close2.onclick = closeBtn.onclick = function () {
       el.setAttribute('data-visible', false);
     };
   </script>

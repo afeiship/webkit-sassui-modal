@@ -1,7 +1,7 @@
 /*webkit-sassui-modal Start*/
 .webkit-sassui-modal {
   width: 80%;
-  top: 38.2%;
+  top: 42.5%;
   left: 50%;
   position: fixed;
   z-index: 100;
@@ -14,7 +14,7 @@
 @keyframes webkit-sassui-modal-in {
   0% {
     opacity: 0;
-    transform: scale(0.1) translate3d(-50%, -50%, 0);
+    transform: scale(0.085) translate3d(-50%, -50%, 0);
   }
   95% {
     opacity: 1;
@@ -33,7 +33,7 @@
   }
   95% {
     opacity: 0.1;
-    transform: scale(0.96) translate3d(-50%, -50%, 0);
+    transform: scale(0.915) translate3d(-50%, -50%, 0);
   }
   100% {
     opacity: 0;
@@ -50,8 +50,36 @@
 }
 
 /*webkit-sassui-modal End*/
+button {
+  outline: none;
+}
+
 .test-webkit-sassui-modal {
   border: 1px solid red;
+}
+
+.test-webkit-sassui-modal > .bd {
+  font-size: 14px;
+  padding: 10px;
+  background: #ff9500;
+  color: #fff;
+}
+
+.test-webkit-sassui-modal h3 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  padding: 4px 0 4px 10px;
+  border-left: 4px solid #fff;
+  background: #eee;
+  color: #333;
+}
+
+.actions {
+  padding: 10px;
+}
+
+.actions button {
+  margin-bottom: 10px;
 }
 
 button {
@@ -60,4 +88,8 @@ button {
   width: 100%;
   background: #007aff;
   color: #fff;
+}
+
+button:active {
+  background: #0062cc;
 }
