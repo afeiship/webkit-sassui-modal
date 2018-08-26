@@ -3,8 +3,8 @@ $webkit-sassui-modal-options:(
   z-index: 100,
   duration: 250ms,
   border-radius: 4px,
-  scale-init: 0.78,
-  scale-fat: 0.1
+  scale-init: 0.815,
+  scale-fat: 0.0485
 )!default;
 
 .webkit-sassui-modal{
@@ -30,7 +30,7 @@ $webkit-sassui-modal-options:(
       opacity: 0;
       transform: scale($scale-init) translate3d(-50%, -50%, 0);
     }
-    85%{
+    90%{
       opacity: $scale-init;
       transform: scale(1 + $scale-fat) translate3d(-50%, -50%, 0);
     }
@@ -45,7 +45,7 @@ $webkit-sassui-modal-options:(
       opacity: 1;
       transform: scale(1) translate3d(-50%, -50%, 0);
     }
-    85%{
+    90%{
       opacity: $scale-init;
       transform: scale(1+$scale-fat) translate3d(-50%, -50%, 0);
     }
