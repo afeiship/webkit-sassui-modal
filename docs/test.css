@@ -32,7 +32,7 @@
     transform: scale(1) translate3d(-50%, -50%, 0);
   }
   90% {
-    opacity: 0.815;
+    opacity: 0.0485;
     transform: scale(1.0485) translate3d(-50%, -50%, 0);
   }
   100% {

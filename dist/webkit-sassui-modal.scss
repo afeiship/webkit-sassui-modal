@@ -46,7 +46,7 @@ $webkit-sassui-modal-options:(
       transform: scale(1) translate3d(-50%, -50%, 0);
     }
     90%{
-      opacity: $scale-init;
+      opacity: $scale-fat;
       transform: scale(1+$scale-fat) translate3d(-50%, -50%, 0);
     }
     100%{
