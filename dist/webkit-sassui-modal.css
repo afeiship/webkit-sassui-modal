@@ -7,8 +7,7 @@
   z-index: 100;
   user-select: none;
   border-radius: 4px;
-  transform-origin: 0 0;
-  overflow: hidden; }
+  transform-origin: 0 0; }
 
 @keyframes webkit-sassui-modal-in {
   0% {
