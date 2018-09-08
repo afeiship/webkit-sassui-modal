@@ -1,6 +1,5 @@
 /*webkit-sassui-modal Start*/
 $webkit-sassui-modal-options:(
-  z-index: 100,
   duration: 250ms,
   border-radius: 4px,
   scale-init: 0.815,
@@ -19,7 +18,6 @@ $webkit-sassui-modal-options:(
   top:42.5%;
   left:50%;
   position: fixed;
-  z-index: $z-index;
   user-select:none;
   border-radius: $border-radius;
   transform-origin: 0 0;
