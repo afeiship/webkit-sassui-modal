@@ -1,3 +1,11 @@
+/*!
+ * name: @feizheng/webkit-sassui-modal
+ * description: Sass for modal.
+ * homepage: https://github.com/afeiship/webkit-sassui-modal
+ * version: 1.0.0
+ * date: 2020-08-14T13:33:14.298Z
+ * license: MIT
+ */
 /*webkit-sassui-modal Start*/
 .webkit-sassui-modal {
   width: 80%;
@@ -48,17 +56,8 @@
 }
 
 /*webkit-sassui-modal End*/
-button {
-  outline: none;
-}
-
-.circle {
-  border-radius: 1000px;
-}
-
 .test-webkit-sassui-modal {
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 2px 6px 14px rgba(0, 0, 0, 0.2);
+  border: 1px solid red;
 }
 
 .test-webkit-sassui-modal > .bd {
@@ -77,22 +76,10 @@ button {
   color: #333;
 }
 
-.actions {
+.test-webkit-sassui-modal .actions {
   padding: 10px;
 }
 
-.actions button {
+.test-webkit-sassui-modal .actions button {
   margin-bottom: 10px;
-}
-
-button {
-  padding: 14px;
-  border: none;
-  width: 100%;
-  background: #007aff;
-  color: #fff;
-}
-
-button:active {
-  background: #0062cc;
 }

@@ -1,0 +1,27 @@
+@import "../dist/index.scss";
+
+.test-webkit-sassui-modal {
+  border: 1px solid red;
+  > .bd {
+    font-size: 14px;
+    padding: 10px;
+    background: #ff9500;
+    color: #fff;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    padding: 4px 0 4px 10px;
+    border-left: 4px solid #fff;
+    background: #eee;
+    color: #333;
+  }
+
+  .actions {
+    padding: 10px;
+    button {
+      margin-bottom: 10px;
+    }
+  }
+}
