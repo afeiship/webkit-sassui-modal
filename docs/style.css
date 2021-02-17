@@ -1,13 +1,5 @@
-/*!
- * name: @feizheng/webkit-sassui-modal
- * description: Sass for modal.
- * homepage: https://github.com/afeiship/webkit-sassui-modal
- * version: 1.0.0
- * date: 2020-08-14T13:33:14.298Z
- * license: MIT
- */
-/*webkit-sassui-modal Start*/
-.webkit-sassui-modal {
+/*wsui-modal Start*/
+.wsui-modal {
   width: 80%;
   top: 42.5%;
   left: 50%;
@@ -17,7 +9,7 @@
   transform-origin: 0 0;
 }
 
-@keyframes webkit-sassui-modal-in {
+@keyframes wsui-modal-in {
   0% {
     opacity: 0;
     transform: scale(0.815) translate3d(-50%, -50%, 0);
@@ -32,7 +24,7 @@
   }
 }
 
-@keyframes webkit-sassui-modal-out {
+@keyframes wsui-modal-out {
   0% {
     opacity: 1;
     transform: scale(1) translate3d(-50%, -50%, 0);
@@ -47,27 +39,27 @@
   }
 }
 
-.webkit-sassui-modal.visible-true, .webkit-sassui-modal[data-visible=true] {
-  animation: 250ms webkit-sassui-modal-in ease-in-out forwards;
+.wsui-modal.visible-true, .wsui-modal[data-visible=true] {
+  animation: 250ms wsui-modal-in ease-in-out forwards;
 }
 
-.webkit-sassui-modal.visible-false, .webkit-sassui-modal[data-visible=false] {
-  animation: 250ms webkit-sassui-modal-out ease-in-out forwards;
+.wsui-modal.visible-false, .wsui-modal[data-visible=false] {
+  animation: 250ms wsui-modal-out ease-in-out forwards;
 }
 
-/*webkit-sassui-modal End*/
-.test-webkit-sassui-modal {
+/*wsui-modal End*/
+.test-wsui-modal {
   border: 1px solid red;
 }
 
-.test-webkit-sassui-modal > .bd {
+.test-wsui-modal > .bd {
   font-size: 14px;
   padding: 10px;
   background: #ff9500;
   color: #fff;
 }
 
-.test-webkit-sassui-modal h3 {
+.test-wsui-modal h3 {
   font-size: 16px;
   margin: 0 0 10px 0;
   padding: 4px 0 4px 10px;
@@ -76,10 +68,10 @@
   color: #333;
 }
 
-.test-webkit-sassui-modal .actions {
+.test-wsui-modal .actions {
   padding: 10px;
 }
 
-.test-webkit-sassui-modal .actions button {
+.test-wsui-modal .actions button {
   margin-bottom: 10px;
 }

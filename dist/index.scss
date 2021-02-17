@@ -1,27 +1,27 @@
 /*!
- * name: @feizheng/webkit-sassui-modal
+ * name: @jswork/wsui-modal
  * description: Sass for modal.
- * homepage: https://github.com/afeiship/webkit-sassui-modal
+ * homepage: https://github.com/afeiship/wsui-modal
  * version: 1.0.0
- * date: 2020-08-14T13:33:14.298Z
+ * date: 2021-02-17 15:00:48
  * license: MIT
  */
 
-/*webkit-sassui-modal Start*/
-$webkit-sassui-modal-options:(
+/*wsui-modal Start*/
+$wsui-modal-options:(
   duration: 250ms,
   border-radius: 4px,
   scale-init: 0.815,
   scale-fat: 0.0485
 )!default;
 
-.webkit-sassui-modal{
+.wsui-modal{
 
-  $z-index: map-get($map: $webkit-sassui-modal-options, $key: z-index);
-  $duration: map-get($map: $webkit-sassui-modal-options, $key: duration);
-  $border-radius: map-get($map: $webkit-sassui-modal-options, $key: border-radius);
-  $scale-init: map-get($map: $webkit-sassui-modal-options, $key: scale-init);
-  $scale-fat: map-get($map: $webkit-sassui-modal-options, $key: scale-fat);
+  $z-index: map-get($map: $wsui-modal-options, $key: z-index);
+  $duration: map-get($map: $wsui-modal-options, $key: duration);
+  $border-radius: map-get($map: $wsui-modal-options, $key: border-radius);
+  $scale-init: map-get($map: $wsui-modal-options, $key: scale-init);
+  $scale-fat: map-get($map: $wsui-modal-options, $key: scale-fat);
 
   width: 80%;
   top:42.5%;
@@ -31,7 +31,7 @@ $webkit-sassui-modal-options:(
   border-radius: $border-radius;
   transform-origin: 0 0;
 
-  @keyframes webkit-sassui-modal-in {
+  @keyframes wsui-modal-in {
     0% {
       opacity: 0;
       transform: scale($scale-init) translate3d(-50%, -50%, 0);
@@ -46,7 +46,7 @@ $webkit-sassui-modal-options:(
     }
   }
 
-  @keyframes webkit-sassui-modal-out {
+  @keyframes wsui-modal-out {
     0% {
       opacity: 1;
       transform: scale(1) translate3d(-50%, -50%, 0);
@@ -64,13 +64,13 @@ $webkit-sassui-modal-options:(
 
   &.visible-true,
   &[data-visible=true]{
-    animation: $duration webkit-sassui-modal-in ease-in-out forwards;
+    animation: $duration wsui-modal-in ease-in-out forwards;
   }
 
   &.visible-false,
   &[data-visible=false]{
-    animation: $duration webkit-sassui-modal-out ease-in-out forwards;
+    animation: $duration wsui-modal-out ease-in-out forwards;
   }
 
 }
-/*webkit-sassui-modal End*/
+/*wsui-modal End*/

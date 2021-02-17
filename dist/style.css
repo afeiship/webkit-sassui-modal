@@ -1,13 +1,13 @@
 /*!
- * name: @feizheng/webkit-sassui-modal
+ * name: @jswork/wsui-modal
  * description: Sass for modal.
- * homepage: https://github.com/afeiship/webkit-sassui-modal
+ * homepage: https://github.com/afeiship/wsui-modal
  * version: 1.0.0
- * date: 2020-08-14T13:33:14.298Z
+ * date: 2021-02-17 15:00:48
  * license: MIT
  */
-/*webkit-sassui-modal Start*/
-.webkit-sassui-modal {
+/*wsui-modal Start*/
+.wsui-modal {
   width: 80%;
   top: 42.5%;
   left: 50%;
@@ -19,7 +19,7 @@
   border-radius: 4px;
   transform-origin: 0 0; }
 
-@-webkit-keyframes webkit-sassui-modal-in {
+@-webkit-keyframes wsui-modal-in {
   0% {
     opacity: 0;
     transform: scale(0.815) translate3d(-50%, -50%, 0); }
@@ -30,7 +30,7 @@
     opacity: 1;
     transform: scale(1) translate3d(-50%, -50%, 0); } }
 
-@keyframes webkit-sassui-modal-in {
+@keyframes wsui-modal-in {
   0% {
     opacity: 0;
     transform: scale(0.815) translate3d(-50%, -50%, 0); }
@@ -41,7 +41,7 @@
     opacity: 1;
     transform: scale(1) translate3d(-50%, -50%, 0); } }
 
-@-webkit-keyframes webkit-sassui-modal-out {
+@-webkit-keyframes wsui-modal-out {
   0% {
     opacity: 1;
     transform: scale(1) translate3d(-50%, -50%, 0); }
@@ -52,7 +52,7 @@
     opacity: 0;
     transform: scale(0.815) translate3d(-50%, -50%, 0); } }
 
-@keyframes webkit-sassui-modal-out {
+@keyframes wsui-modal-out {
   0% {
     opacity: 1;
     transform: scale(1) translate3d(-50%, -50%, 0); }
@@ -62,11 +62,11 @@
   100% {
     opacity: 0;
     transform: scale(0.815) translate3d(-50%, -50%, 0); } }
-  .webkit-sassui-modal.visible-true, .webkit-sassui-modal[data-visible=true] {
-    -webkit-animation: 250ms webkit-sassui-modal-in ease-in-out forwards;
-            animation: 250ms webkit-sassui-modal-in ease-in-out forwards; }
-  .webkit-sassui-modal.visible-false, .webkit-sassui-modal[data-visible=false] {
-    -webkit-animation: 250ms webkit-sassui-modal-out ease-in-out forwards;
-            animation: 250ms webkit-sassui-modal-out ease-in-out forwards; }
+  .wsui-modal.visible-true, .wsui-modal[data-visible=true] {
+    -webkit-animation: 250ms wsui-modal-in ease-in-out forwards;
+            animation: 250ms wsui-modal-in ease-in-out forwards; }
+  .wsui-modal.visible-false, .wsui-modal[data-visible=false] {
+    -webkit-animation: 250ms wsui-modal-out ease-in-out forwards;
+            animation: 250ms wsui-modal-out ease-in-out forwards; }
 
-/*webkit-sassui-modal End*/
+/*wsui-modal End*/
